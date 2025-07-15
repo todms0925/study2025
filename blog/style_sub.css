@@ -1,0 +1,440 @@
+/* 언어설정 */
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 로고설정 */
+.logo {}
+
+.logo h1 {
+    font-size: 50px;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo h1 a {
+    display: block;
+    padding: 5px;
+    color: tomato;
+}
+
+/* 네비게이션 */
+.menu {}
+
+.menu ul {
+    display: flex;
+    background-color: tomato;
+}
+
+.menu ul li {}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+/* 스토리 */
+
+/* 기사의 작성일 */
+.storyinfo {
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.storyinfo time {}
+
+.storyinfo time i {
+    color: #666;
+    margin-right: 8px;
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+}
+
+.story h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.story p {
+    margin-bottom: 10px;
+}
+
+/* 사이드메뉴 */
+.sidemenu {
+    margin-bottom: 30px;
+}
+
+.sidemenu h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px dotted #666;
+}
+
+.sidemenu ul li a {
+    display: block;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.sidemenu i {
+    margin: 8px;
+    color: #888;
+}
+
+.story-cat {}
+
+.story-cat ul {
+    display: flex
+}
+
+.story-cat ul li {}
+
+.story-cat ul li a {
+    display: block;
+    background-color: tomato;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.story-cat ul li a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+
+.story h2 {
+    font-weight: normal;
+    border-left: solid tomato 8px;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+.story p {
+    padding-bottom: 20px;
+}
+
+
+
+/* 추천기사 */
+.recommend {
+    margin-bottom: 30px;
+}
+
+.recommend h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 2px #ddd dotted;
+}
+
+.recommend ul li a {
+    display: block;
+    padding: 0px;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.recommend ul li a img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.recommend ul li a .txt {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+/* sns */
+.sns {}
+
+.sns ul {
+    display: flex;
+}
+
+.sns ul li {
+    width: 33%;
+}
+
+.sns ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.sns i {
+    margin-right: 10px;
+}
+
+.sns ul li:nth-child(1) a {
+    background-color: #1da1f2;
+}
+
+.sns ul li:nth-child(2) a {
+    background-color: #1877f2;
+}
+
+.sns ul li:nth-child(3) a {
+    background: linear-gradient(45deg, #5851db, #e1306c, #fcaf45)
+}
+
+/* 관련기사 */
+.relation {
+    margin-top: 40px;
+    background-color: #f0f0b4;
+    padding: 20px;
+}
+
+.relation h1 {
+    color: tomato;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.relation ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.relation ul li {
+    width: 25%;
+}
+
+.relation ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.relation ul li a:hover {
+    text-decoration: underline;
+}
+
+.relation ul li a img {
+    width: 100%;
+}
+
+
+/* 인기기사 */
+.popular {
+    margin-bottom: 30px;
+}
+
+.popular h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px dotted #666;
+}
+
+.popular ul li a {
+    display: flex;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: tomato;
+    border-bottom: 1px rgb(169, 169, 169) dotted;
+}
+
+.popular ul li a img {
+    width: 60px;
+    height: 60px;
+}
+
+.popular ul li a .txt {
+    width: auto;
+    padding-left: 15px;
+}
+
+.popular ul li a .txt span {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* 카피라이트 */
+.box5 {
+    border-top: solid #666 1px;
+}
+
+.copyight {}
+
+.copyight p {
+    font-size: 10px;
+    color: #666;
+}
+
+/* 박스 위아래 간격설정 */
+.box1 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.box3 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.box4 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.box5 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* 박스 좌우 여백 확보 */
+.box1,
+.box2,
+.boxA,
+.box5 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* 미디어쿼리구간------------------ */
+
+/* 599px 이하일때 설정 */
+@media(max-width:599px) {
+
+    .menu ul li a {
+        padding: 10px 3px;
+        font-size: 11px;
+    }
+
+    .story h1 {
+        font-size: 26px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .box1 {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .box3 {
+        padding-top: 25px;
+
+    }
+
+
+    .relation ul li {
+        width: 50%;
+    }
+
+    .sns span {
+        text-indent: -9999px;
+        display: inline-block;
+    }
+
+
+}
+
+/* 600px 이상 767px 이하 일때 설정 */
+@media(min-width:600px) and (max-width:767px) {
+
+    .box4 {
+        display: flex;
+    }
+
+    .box4-1 {
+        width: 50%;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .box4-2 {
+        width: 50%;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+
+}
+
+
+/* 768px 이상일때 설정 */
+@media (min-width: 768px) {
+
+    /* 박스3 과 박스4 의 가로정렬 */
+    .boxA {
+        display: flex;
+    }
+
+    .box3 {
+        width: 70%;
+    }
+
+    .box4 {
+        width: 30%;
+    }
+
+    /* 박스3과 박스4의 왼쪽오른쪽 간격설정 */
+    .boxA {
+        flex-wrap: wrap;
+    }
+
+    .box3 {
+        padding-right: 50px;
+        box-sizing: border-box;
+
+    }
+
+
+}
+
+/* 1200px 이상일때 설정 */
+@media (min-width:1200px) {
+
+    .box1,
+    .boxA,
+    .menu,
+    .copyight {
+        width: 1180px;
+        margin: 0 auto;
+    }
+}
