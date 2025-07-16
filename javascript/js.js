@@ -9,6 +9,6 @@ $(document).ready(function () {
     // 클래스 toggle을 클릭했을때, 클래스 gng가 슬라이드 Toggle되어라
 
     $('.toggle').click(function(){
-        $('.gnb').sliedetoggle()
-    }
+        $('.gnb').slideToggle()
+    })
 })
